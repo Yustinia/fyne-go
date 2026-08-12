@@ -1,7 +1,8 @@
 DIR := /app
 NAME := fynego
+BUILDCON := $(shell fd -u -H -t file -e go)
 
-$(NAME):
+$(NAME): $(BUILDCON)
 	go build -x .
 
 .PHONY: docker up
