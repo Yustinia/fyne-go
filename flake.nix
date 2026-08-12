@@ -20,15 +20,15 @@
           golangci-lint # lint
           gofumpt # fmt
 
-          # fyne components
+          # Fyne components
           libGL
           pkg-config
-          xorg.libX11.dev
-          xorg.libXcursor
-          xorg.libXi
-          xorg.libXinerama
-          xorg.libXrandr
-          xorg.libXxf86vm
+          libx11.dev
+          libxcursor
+          libxi
+          libxinerama
+          libxrandr
+          libxxf86vm
           libxkbcommon
           wayland
 
