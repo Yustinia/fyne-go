@@ -1,0 +1,2 @@
+fynego:
+	go build -x .
