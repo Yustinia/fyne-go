@@ -40,6 +40,13 @@
           #html
           vscode-langservers-extracted
           prettier
+
+          # docker
+          dockerfmt
+          hadolint
+          docker-language-server
+          docker-compose-language-service
+          yamllint
         ];
       };
     };
