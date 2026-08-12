@@ -36,6 +36,10 @@
           gnumake
           checkmake
           mbake
+
+          #html
+          vscode-langservers-extracted
+          prettier
         ];
       };
     };
