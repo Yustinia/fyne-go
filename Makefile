@@ -8,5 +8,5 @@ $(NAME): $(BUILDCON)
 .PHONY: docker up
 
 up:
-	docker compose run -it --rm -v $$(pwd) -w $(DIR) --name $(NAME) $(NAME) bash
+	docker compose run -it --rm -v $$(pwd):$(DIR) -w $(DIR) --name $(NAME) $(NAME) bash
 	docker compose down
