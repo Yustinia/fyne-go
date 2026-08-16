@@ -12,6 +12,24 @@ import (
 func main() {
 	// borderDemo()
 	// formDemo()
+	gridColumns()
+}
+
+func gridColumns() {
+	a := app.NewWithID("hbox")
+	w := a.NewWindow("Hbox Demo")
+
+	entry := widget.NewEntry()
+	entry.SetPlaceHolder("Hello")
+
+	entrySecond := widget.NewEntry()
+	entrySecond.SetPlaceHolder("World")
+
+	columns := container.NewGridWithColumns(2, entry, entrySecond)
+
+	w.SetContent(columns)
+	w.Resize(fyne.NewSize(300, 200))
+	w.ShowAndRun()
 }
 
 func formDemo() {
